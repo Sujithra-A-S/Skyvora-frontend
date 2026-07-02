@@ -42,7 +42,7 @@ export class NewsletterComponent {
       return;
     }
 
-    this.http.post('http://localhost:5000/enquiry', this.formData)
+    this.http.post('https://skyvora-backend-production.up.railway.app/enquiry', this.formData)
       .subscribe({
         next: () => {
           this.successMessage = true;
