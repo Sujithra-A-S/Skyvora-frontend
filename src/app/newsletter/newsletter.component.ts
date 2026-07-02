@@ -65,7 +65,7 @@ export class NewsletterComponent {
         },
         error: (err) => {
           console.log(err);
-          alert('Something went wrong');
+          alert(err.error?.message || 'Something went wrong');
         }
       });
   }
