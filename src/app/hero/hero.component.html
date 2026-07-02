@@ -1,0 +1,24 @@
+<section class="hero" [style.backgroundImage]="'url(' + slides[currentSlide].image + ')'">
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <div class="tag">Journey For Peace </div>
+
+    <h1>{{ slides[currentSlide].title1 }}</h1>
+    <h2>{{ slides[currentSlide].title2 }}</h2>
+
+    <p>{{ slides[currentSlide].text }}</p>
+
+    <button class="hero-btn" (click)="scrollToNewsletter()">Plan Your Trip</button>
+    <button class="explore" (click)="scrollToExperience()">Explore ↓</button>
+  </div>
+  <div class="slider-dots">
+  <span 
+    *ngFor="let slide of slides; let i = index"
+    [class.active]="i === currentSlide"
+    (click)="currentSlide = i">
+  </span>
+</div>
+
+</section>

@@ -1,0 +1,43 @@
+<div class="popup-overlay" *ngIf="showPopup" (click)="closePopup()">
+  <div class="popup-box" (click)="$event.stopPropagation()">
+    <button class="close-btn" (click)="closePopup()">×</button>
+    <h2>Plan Your Peace</h2>
+    <input type="text" placeholder="Name *" [(ngModel)]="formData.name" name="name">
+    <input type="text" placeholder="City of Residence *" [(ngModel)]="formData.city" name="city">
+    <input type="email" placeholder="Email *" [(ngModel)]="formData.email" name="email">
+    <input type="text" placeholder="Phone Number *" [(ngModel)]="formData.phone" name="phone">
+    <input type="text" placeholder="WhatsApp Number *" [(ngModel)]="formData.whatsapp" name="whatsapp">
+    <input type="text" placeholder="Travel Destination *" [(ngModel)]="formData.destination" name="destination">
+    <!-- <input type="date" placeholder="Date of travel *" [(ngModel)]="formData.date" name="date"> -->
+     <div class="date-group">
+  <input type="date" id="vacationDate" [(ngModel)]="formData.date" name="date" required>
+  <label for="vacationDate">Date of Vacation *</label>
+</div>
+    <input type="number" placeholder="No. of People *" [(ngModel)]="formData.people" name="people">
+
+    <!-- <select [(ngModel)]="formData.vacation" name="vacation">
+      <option value="">Vacation Type *</option>
+      <option>Family Trip</option>
+      <option>Honeymoon</option>
+      <option>Adventure</option>
+      <option>Bachelor's Trip</option>
+      <option>Couple Trip</option>
+      <option>College Trip</option>
+      <option>Stranger's Trip</option>
+      <option>Office Trip</option>
+    </select> -->
+
+    <button type="button" class="submit-btn" (click)="submitForm()">
+      Enquire Now
+    </button>
+
+  </div>
+</div>
+
+<div class="success-toast" *ngIf="showSuccess">
+  ✅ We will connect you shortly!
+</div>
+
+<div class="error-toast" *ngIf="showError">
+  ⚠️ Please Fill All Fields
+</div>

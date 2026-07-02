@@ -1,0 +1,92 @@
+<section id="newsletter" class="newsletter">
+  <section class="newsletter">
+  <div class="newsletter-content">
+    <span class="subtitle">
+      <span class="line"></span>
+      STAY IN THE LOOP
+    </span>
+
+    <h2>
+      Get Exclusive <br>
+      Travel Deals
+    </h2>
+
+    <p>
+      Enquire and be the first to get curated destination guides,
+      festival alerts, and limited-time offers.
+    </p>
+  </div>
+ <section>
+<form class="booking-form" (ngSubmit)="onSubmit()">
+
+  <input type="text" placeholder="Name *"
+    [(ngModel)]="formData.name" name="name"
+    [class.error]="submitted && !formData.name">
+
+  <input type="text" placeholder="City of Residence *"
+    [(ngModel)]="formData.city" name="city"
+    [class.error]="submitted && !formData.city">
+
+  <input type="email" placeholder="Email *"
+    [(ngModel)]="formData.email" name="email"
+    [class.error]="submitted && !formData.email">
+
+  <input type="tel" placeholder="Phone Number *"
+    [(ngModel)]="formData.phone" name="phone"
+    [class.error]="submitted && !formData.phone">
+
+  <input type="text" placeholder="Whatsapp Number *"
+    [(ngModel)]="formData.whatsapp" name="whatsapp">
+
+  <input type="text" placeholder="Travel Destination *"
+    [(ngModel)]="formData.destination" name="destination"
+    [class.error]="submitted && !formData.destination">
+
+  <!-- <input type="date"placeholder="Date of travel *"
+    [(ngModel)]="formData.date" name="date"
+    [class.error]="submitted && !formData.date"> -->
+
+  <input type="number" placeholder="No. of People *"
+    [(ngModel)]="formData.people" name="people"
+    [class.error]="submitted && !formData.people">
+    <div class="date-group">
+  <input
+    type="date"
+    id="vacationDate"
+    [(ngModel)]="formData.date"
+    name="date"
+    required>
+  <label for="vacationDate">Date of vacation *</label>
+</div>
+
+  <!-- <select [(ngModel)]="formData.vacation" name="vacation"
+    [class.error]="submitted && !formData.vacation">
+    <option value="">Vacation Type *</option>
+    <option>Family </option>
+      <option>Honeymoon</option>
+      <option>Adventure</option>
+      <option>Bachelor's </option>
+      <option>Couple </option>
+      <option>College </option>
+      <option>Stranger's </option>
+      <option>Office </option>
+  </select> -->
+
+  <button type="button" (click)="onSubmit()">
+  Enquire Now
+</button>
+
+</form>
+
+<div class="error-msg" *ngIf="submitted && (
+  !formData.name || !formData.city || !formData.email || !formData.phone ||
+  !formData.destination || !formData.date || !formData.people 
+)">
+  Please fill all required fields.
+</div>
+
+<div class="success-msg" *ngIf="successMessage">
+  ✅ We will connect with you shortly!
+</div>
+</section>
+</section>

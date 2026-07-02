@@ -1,0 +1,73 @@
+.testimonials{
+  background:#080d18;
+  color:white;
+  padding:100px 80px;
+  overflow:hidden;
+}
+
+.title span{
+  color:#e67327;
+  font-weight:800;
+  letter-spacing:2px;
+}
+
+.title h1{
+  font-size:55px;
+  margin:20px 0;
+}
+
+.title p{
+  color:#b7c0d3;
+  font-size:18px;
+}
+
+.slider{
+  margin-top:70px;
+  overflow:hidden;
+}
+
+.track{
+  display:flex;
+  gap:30px;
+  animation: slide 9s infinite;
+}
+
+.card{
+  min-width:75%;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:20px;
+  padding:35px;
+}
+
+.card h4{
+  color:#e67327;
+  font-size:22px;
+}
+
+.card p{
+  color:white;
+  font-size:18px;
+  font-style:italic;
+  margin:25px 0;
+}
+
+.card h3{
+  margin:0;
+}
+
+.card span{
+  color:#b7c0d3;
+}
+
+@keyframes slide{
+  0%,30%{
+    transform:translateX(0);
+  }
+  35%,65%{
+    transform:translateX(-80%);
+  }
+  70%,100%{
+    transform:translateX(-160%);
+  }
+}

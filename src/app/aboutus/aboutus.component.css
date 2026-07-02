@@ -1,0 +1,408 @@
+/* .about-hero{
+  min-height:55vh;
+  background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
+    url('/assets/about-bg.jpg');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  padding:120px 40px 60px;
+}
+
+.about-title span{
+  color:#f4c542;
+  font-weight:800;
+  letter-spacing:2px;
+}
+
+.about-title h1{
+  font-size:70px;
+  margin:20px 0;
+  font-weight:900;
+}
+
+.about-title em{
+  color:#f4c542;
+}
+
+.about-title p{
+  font-size:18px;
+  color:#d1d5db;
+}
+
+.mission{
+  background:#080d18;
+  color:white;
+  padding:90px 12%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.mission-text h2{
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.mission-text p,
+.mission-text li{
+  color:#cbd5e1;
+  line-height:1.8;
+  font-size:17px;
+}
+
+.mission-text ul{
+  list-style:none;
+  padding:0;
+  margin-top:30px;
+}
+
+.mission-text li{
+  margin-bottom:18px;
+}
+
+.mission-text li::before{
+  content:"✓";
+  color:#f4c542;
+  font-weight:bold;
+  margin-right:10px;
+}
+
+.mission-img{
+  position:relative;
+}
+
+.mission-img img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  border-radius:18px;
+}
+
+.stats-box{
+  position:absolute;
+  left:-35px;
+  bottom:-35px;
+  background:#101827;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:18px;
+  padding:25px 35px;
+  display:flex;
+  gap:35px;
+}
+
+.stats-box h3{
+  color:#f4c542;
+  font-size:38px;
+  margin:0;
+}
+
+.stats-box p{
+  color:#cbd5e1;
+  font-size:13px;
+  margin:5px 0 0;
+}
+
+@media(max-width:900px){
+  .mission{
+    grid-template-columns:1fr;
+  }
+
+  .about-title h1{
+    font-size:45px;
+  }
+} */
+
+
+
+
+
+
+
+/* .about-hero{
+  min-height:55vh;
+  background:
+    linear-gradient(rgba(78, 95, 126, 0.7),rgba(143, 162, 195, 0.496)),
+    url('/assets/about1.jpg');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  padding:120px 40px 60px;
+}
+
+.about-title span{
+  color: white;
+  font-weight:800;
+  letter-spacing:2px;
+}
+
+.about-title h1{
+  font-size:70px;
+  margin:20px 0;
+  font-weight:900;
+  color:#ffffff;
+}
+
+.about-title em{
+  color:#38BDF8;
+}
+
+.about-title p{
+  font-size:18px;
+  color:#EAF6FF;
+}
+
+.mission{
+  background:#f4f8ff;
+  color:#0B3D91;
+  padding:90px 12%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.mission-text h2{
+  font-size:48px;
+  margin-bottom:20px;
+  color:#0B3D91;
+}
+
+.mission-text p,
+.mission-text li{
+  color:#5B6B85;
+  line-height:1.8;
+  font-size:17px;
+}
+
+.mission-text ul{
+  list-style:none;
+  padding:0;
+  margin-top:30px;
+}
+
+.mission-text li{
+  margin-bottom:18px;
+}
+
+.mission-text li::before{
+  content:"✓";
+  color:#1D4ED8;
+  font-weight:bold;
+  margin-right:10px;
+}
+
+.mission-img{
+  position:relative;
+}
+
+.mission-img img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  border-radius:18px;
+  box-shadow:
+    0 12px 25px rgba(29,78,216,0.18),
+    0 25px 60px rgba(14,79,191,0.20);
+}
+
+.stats-box{
+  position:absolute;
+  left:-35px;
+  bottom:-35px;
+  background:#ffffff;
+  border:1px solid rgba(29,78,216,.15);
+  border-radius:18px;
+  padding:25px 35px;
+  display:flex;
+  gap:35px;
+  box-shadow:
+    0 10px 25px rgba(29,78,216,0.15),
+    0 20px 45px rgba(14,79,191,0.18);
+}
+
+.stats-box h3{
+  color:#1D4ED8;
+  font-size:38px;
+  margin:0;
+}
+
+.stats-box p{
+  color:#5B6B85;
+  font-size:13px;
+  margin:5px 0 0;
+}
+
+@media(max-width:900px){
+  .mission{
+    grid-template-columns:1fr;
+  }
+
+  .about-title h1{
+    font-size:45px;
+  }
+}  */
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+.about-hero{
+  min-height:55vh;
+  background:
+    linear-gradient(rgba(78, 95, 126, 0.7),rgba(143, 162, 195, 0.496)),
+    url('/assets/about1.jpg');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  padding:120px 40px 60px;
+}
+
+.about-title span{
+  color:white;
+  font-weight:800;
+  letter-spacing:4px;
+  font-size:16px;
+}
+
+.about-title h1{
+  font-family:'Playfair Display', serif;
+  font-size:76px;
+  margin:20px 0;
+  font-weight:900;
+  color:#ffffff;
+}
+
+.about-title em{
+  font-family:'Allura', cursive;
+  color:#38BDF8;
+  font-size:88px;
+  font-weight:700;
+}
+
+.about-title p{
+  font-size:20px;
+  color:#EAF6FF;
+}
+
+.mission{
+  background:#f4f8ff;
+  color:#0B3D91;
+  padding:90px 12%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.mission-text h2{
+  font-family:'Playfair Display', serif;
+  font-size:48px;
+  margin-bottom:20px;
+  color:#0B3D91;
+}
+
+.mission-text p,
+.mission-text li{
+  color:#5B6B85;
+  line-height:1.8;
+  font-size:17px;
+}
+
+.mission-text ul{
+  list-style:none;
+  padding:0;
+  margin-top:30px;
+}
+
+.mission-text li{
+  margin-bottom:18px;
+}
+
+.mission-text li::before{
+  content:"✓";
+  color:#1D4ED8;
+  font-weight:bold;
+  margin-right:10px;
+}
+
+.mission-img{
+  position:relative;
+}
+
+.mission-img img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  border-radius:18px;
+  box-shadow:
+    0 12px 25px rgba(29,78,216,0.18),
+    0 25px 60px rgba(14,79,191,0.20);
+}
+
+.stats-box{
+  position:absolute;
+  left:-35px;
+  bottom:-35px;
+  background:#ffffff;
+  border:1px solid rgba(29,78,216,.15);
+  border-radius:18px;
+  padding:25px 35px;
+  display:flex;
+  gap:35px;
+  box-shadow:
+    0 10px 25px rgba(29,78,216,0.15),
+    0 20px 45px rgba(14,79,191,0.18);
+}
+
+.stats-box h3{
+  color:#1D4ED8;
+  font-size:38px;
+  margin:0;
+}
+
+.stats-box p{
+  color:#5B6B85;
+  font-size:13px;
+  margin:5px 0 0;
+}
+
+@media(max-width:900px){
+  .mission{
+    grid-template-columns:1fr;
+    padding:70px 8%;
+  }
+
+  .about-title h1{
+    font-size:48px;
+  }
+
+  .about-title em{
+    font-size:58px;
+  }
+
+  .about-title p{
+    font-size:16px;
+  }
+
+  .stats-box{
+    position:static;
+    margin-top:25px;
+    justify-content:center;
+  }
+}

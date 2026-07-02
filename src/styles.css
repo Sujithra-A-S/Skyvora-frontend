@@ -1,0 +1,213 @@
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,
+body{
+  width:100%;
+  min-height:100%;
+  overflow-x:hidden;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width:768px){
+
+  body{
+    overflow-x:hidden;
+  }
+
+  section{
+    padding:55px 24px !important;
+  }
+
+  h1{
+    font-size:42px !important;
+    line-height:1.15 !important;
+  }
+
+  h2{
+    font-size:30px !important;
+    line-height:1.2 !important;
+  }
+
+  p{
+    font-size:18px !important;
+    line-height:1.5 !important;
+  }
+
+  /* NAVBAR */
+  .navbar{
+    height:95px !important;
+    padding:14px 24px !important;
+    background:rgba(5,8,18,0.96) !important;
+  }
+
+  .logo img{
+    width:58px !important;
+    height:58px !important;
+  }
+
+  .logo h1{
+    font-size:34px !important;
+  }
+
+  .nav-links{
+    display:none !important;
+  }
+
+  .plan-btn{
+    display:none !important;
+  }
+
+  .menu-icon{
+    display:block !important;
+    font-size:38px !important;
+    color:white !important;
+  }
+
+  /* HERO */
+  .hero{
+    min-height:100vh !important;
+    padding:135px 28px 60px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    text-align:center !important;
+  }
+
+  .hero-content{
+    width:100% !important;
+    margin:0 auto !important;
+  }
+
+  .hero-content h3{
+    font-size:36px !important;
+    line-height:1.2 !important;
+  }
+
+  .hero-content h1{
+    font-size:64px !important;
+    line-height:1 !important;
+  }
+
+  .hero-content h2{
+    font-size:48px !important;
+    color:#e67327 !important;
+  }
+
+  .hero-content p{
+    font-size:23px !important;
+  }
+
+  .hero-buttons{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    gap:20px !important;
+  }
+
+  .hero-btn,
+  .trip-btn{
+    width:90% !important;
+    max-width:360px !important;
+    height:68px !important;
+    border-radius:45px !important;
+    justify-content:center !important;
+    font-size:22px !important;
+  }
+
+  /* ALL GRIDS */
+  .tour-grid,
+  .package-grid,
+  .destination-grid,
+  .services-grid,
+  .gallery-grid{
+    grid-template-columns:1fr !important;
+    width:100% !important;
+    gap:28px !important;
+  }
+
+  .tour-card,
+  .package-card,
+  .service-card{
+    width:100% !important;
+  }
+
+  .experience-header,
+  .destination-header,
+  .gallery-header{
+    width:100% !important;
+    text-align:center !important;
+  }
+
+  .experience-header h1,
+  .destination-header h1,
+  .gallery-header h1{
+    font-size:44px !important;
+    max-width:100% !important;
+  }
+
+  /* NEWSLETTER / ENQUIRY FORM */
+  .newsletter-form{
+    width:100% !important;
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:22px !important;
+    padding:0 22px !important;
+  }
+
+  .newsletter-form input,
+  .newsletter-form select{
+    width:100% !important;
+    height:70px !important;
+    font-size:21px !important;
+    border-radius:40px !important;
+  }
+
+  input[type="date"]{
+    display:block !important;
+    opacity:1 !important;
+    visibility:visible !important;
+    color:white !important;
+    -webkit-appearance:auto !important;
+    appearance:auto !important;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator{
+    filter:invert(1) !important;
+    opacity:1 !important;
+  }
+
+  .submit-btn{
+    width:90% !important;
+    height:72px !important;
+    border-radius:45px !important;
+    font-size:24px !important;
+    margin:10px auto !important;
+  }
+
+  /* FOOTER */
+  .footer{
+    grid-template-columns:1fr !important;
+    padding:55px 32px !important;
+    gap:35px !important;
+  }
+
+  /* WHATSAPP */
+  .whatsapp-btn{
+    width:68px !important;
+    height:68px !important;
+    left:20px !important;
+    bottom:25px !important;
+  }
+
+  .whatsapp-btn img{
+    width:68px !important;
+    height:68px !important;
+  }
+}

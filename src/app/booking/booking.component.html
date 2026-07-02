@@ -1,0 +1,33 @@
+<form #travelForm="ngForm" (ngSubmit)="onSubmit()">
+
+  <input type="text" name="name" ngModel required placeholder="Name">
+
+  <input type="text" name="city" ngModel required placeholder="City of Residence">
+
+  <input type="email" name="email" ngModel required placeholder="Email">
+
+  <input type="tel" name="phone" ngModel required placeholder="Phone Number">
+
+  <input type="text" name="whatsapp" ngModel placeholder="WhatsApp">
+
+  <input type="text" name="destination" ngModel required placeholder="Travel Destination">
+
+  <input type="date" name="date" ngModel required>
+
+  <input type="number" name="people" ngModel required placeholder="No. of People">
+
+  <select name="vacation" ngModel required>
+    <option value="">Vacation Type</option>
+    <option>Family Trip</option>
+    <option>Honeymoon</option>
+    <option>Adventure</option>
+  </select>
+
+  <button type="submit" (click)="onSubmit()">
+  Enquire Now
+</button>
+
+<div class="success-msg" *ngIf="showMessage">
+  ✅ We will connect you shortly!
+</div>
+</form>
