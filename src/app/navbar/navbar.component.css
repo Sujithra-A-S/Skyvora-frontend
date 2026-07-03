@@ -678,5 +678,36 @@ border-bottom: 1px solid rgba(0,0,0,0.05);
     background: linear-gradient(90deg,#0B3D91,#4FC3F7);
     color: #fff;
   }
+  /* FINAL SAFE MOBILE NAVBAR FIX */
+
+}
+@media (max-width: 900px) {
+  .trip-btn {
+    display: none !important;
+  }
+
+  .menu-toggle {
+    display: flex !important;
+  }
+
+  .nav-links {
+    display: none !important;
+  }
+
+  .nav-links.active {
+    display: flex !important;
+    position: fixed !important;
+    top: 65px !important;
+    right: 12px !important;
+    width: 72% !important;
+    max-width: 280px !important;
+    flex-direction: column !important;
+    background: rgba(255,255,255,0.96) !important;
+    border-radius: 20px !important;
+    padding: 20px 0 !important;
+    box-shadow: 0 15px 40px rgba(0,0,0,.18) !important;
+    z-index: 9999 !important;
+    transform: translateX(0) !important;
+  }
 }
 
